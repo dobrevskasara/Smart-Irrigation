@@ -14,6 +14,7 @@ WORKDIR /app
 # COPY --from=build /app/target/ReserveNGo-0.0.1-SNAPSHOT.jar app.jar
 COPY --from=build /app/target/smart-irrigation-0.0.1-SNAPSHOT.jar app.jar
 
-EXPOSE 8080
+# EXPOSE 8080
+EXPOSE 10000
 
 CMD ["java", "-jar", "app.jar"]
